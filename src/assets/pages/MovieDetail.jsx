@@ -20,6 +20,10 @@ export const MovieDetail = () => {
     }
     fetchMovieDetail();
   }, [params.id]);
+  useEffect(() => {
+    document.title = `${data.title} || Plot-Twist`
+  });
+
   return (
     <main>
       <section className="flex justify-around flex-wrap py-5">

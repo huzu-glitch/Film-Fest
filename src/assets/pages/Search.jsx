@@ -1,6 +1,7 @@
 import { useSearchParams } from "react-router";
 import { Cards } from "../components/Cards";
 import { useFetch } from "../hooks/useFetch";
+import { useEffect } from "react";
 
 export const Search = ({apiPath}) => {
 
@@ -8,6 +9,10 @@ export const Search = ({apiPath}) => {
   const searchTerm = queryParams.get("q");
 
   const { data:movie } = useFetch(apiPath, searchTerm);
+
+  useEffect(() => {
+      document.title = `Search for ${searchTerm} || Plot-Twist`
+    });
   return (
     <main>
       <section className="py-7">

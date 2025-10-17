@@ -1,8 +1,12 @@
 import { Cards } from "../components/Cards";
 import { useFetch } from "../hooks/useFetch";
+import { useEffect } from "react";
 
+export const MovieList = ({apiPath, title}) => {
 
-export const MovieList = ({apiPath}) => {
+useEffect(() => {
+    document.title = `${title} || Plot-Twist`
+  });
 
   const { data:movie } = useFetch(apiPath);
   return (

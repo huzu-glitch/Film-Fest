@@ -1,6 +1,11 @@
+import { useEffect } from "react"
 import { Link } from "react-router"
 
 export const PageNotFound = () => {
+
+  useEffect(() => {
+    document.title = "404 Page Not Found"
+  }, [])
   return (
     <main>
       <section className="flex flex-col justify-center px-2">
