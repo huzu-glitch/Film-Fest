@@ -30,14 +30,14 @@ export const Header = () => {
 
   return (
     <header>
-      <nav className="bg-white shadow-2xs shadow-black border-gray-200 dark:bg-gray-900">
+      <nav className="bg-gradient-to-r from-white to-gray-50 dark:bg-gradient-to-r dark:from-gray-900 dark:to-gray-800 shadow-lg border-b border-gray-200 dark:border-gray-700">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <Link
             to="/"
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
             <img src={Logo} className="h-20" alt="Plot-Twist Logo" />
-            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white rounded-4xl">
+            <span className="self-center text-2xl font-semibold whitespace-nowrap bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent dark:from-blue-400 dark:to-purple-400">
               Plot-Twist
             </span>
           </Link>
@@ -205,7 +205,7 @@ export const Header = () => {
             <button
               onClick={()=>setDarkMode(!darkMode)}
               type="button"
-              className=" ml-80 text-gray-400 hover:text-white border border-gray-400 hover:bg-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-white dark:text-shadow-gray-400 dark:hover:text-white dark:hover:bg-amber-200 dark:focus:ring-white dark:bg-amber-50">
+              className="ml-80 text-gray-600 hover:text-gray-800 border border-gray-300 hover:bg-gray-100 hover:shadow-md font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 transition-all duration-200 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-600 dark:bg-gray-800">
                 {
                   darkMode ? <img className="w-4 h-4" src={Dark} alt="dark mode" /> : <img className="w-4 h-4" src={Light} alt="light mode" />
                 }

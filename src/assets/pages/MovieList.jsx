@@ -11,8 +11,8 @@ useEffect(() => {
   const { data:movie } = useFetch(apiPath);
   return (
     <main>
-      <section className="max-w-7xl mx-auto py-7">
-        <div className="flex justify-start flex-wrap">
+      <section className="max-w-7xl mx-auto py-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-items-center">
           {movie?.map((movie)=>(
             <Cards key={movie.id} movie={movie} />
           ))}
