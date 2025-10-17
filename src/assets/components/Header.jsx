@@ -36,7 +36,7 @@ export const Header = () => {
             to="/"
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
-            <img src={Logo} className="h-20" alt="Plot-Twist Logo" />
+            <img src={Logo} className="h-20 rounded-2xl" alt="Plot-Twist Logo" />
             <span className="self-center text-2xl font-semibold whitespace-nowrap bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent dark:from-blue-400 dark:to-purple-400">
               Plot-Twist
             </span>
